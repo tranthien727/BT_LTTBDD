@@ -61,11 +61,12 @@ public class MainActivity extends AppCompatActivity {
         ten.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                ViTri.setText(i);
+                ViTri.setText("" + i);
                 GiaTri.setText(List.get(i));
                 toado=i;
             }
         });
+
 
         Sua.setOnClickListener(new View.OnClickListener() {
             @Override
